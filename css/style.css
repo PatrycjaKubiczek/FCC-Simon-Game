@@ -1,0 +1,100 @@
+body {
+  background-color: #073b4c;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+.circle {
+  height: 400px;
+  width: 400px;
+  border: 10px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+.circle > .button {
+  pointer-events: none;
+}
+
+.active > .button {
+  pointer-events: auto;
+}
+
+.blue {
+  background-color: #118ab2;
+}
+.blue.active {
+  background-color: darkblue;
+}
+
+.green {
+  background-color: #06d6a0;
+}
+
+.red {
+  background-color: #ef476f;
+}
+
+.yellow {
+  background-color: #ffd166;
+}
+
+.blue, .green, .red, .yellow {
+  width: 200px;
+  height: 200px;
+  display: block;
+  cursor: pointer;
+}
+
+.inner-circle {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 24%;
+  border: 2px solid #000;
+  left: 25%;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+.btn {
+  top: 30%;
+  left: 30%;
+  margin: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  color: white;
+  background-color: transparent;
+}
+
+.strict {
+  font-size: 80%;
+  vertical-align: middle;
+}
+.strict input {
+  margin: 0 5px;
+}
+
+.highlight {
+  opacity: 0.3;
+}
+
+.msg {
+  padding-top: 10px;
+}
